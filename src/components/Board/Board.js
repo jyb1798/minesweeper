@@ -9,17 +9,19 @@ const Board = ({ table, activeLevel }) => {
       <LevelMenu />
       <div className={`MineSweeper ${activeLevel}`}>
         <GameMenu />
-        {table.map((cells, row) => (
-          <table className="Table" key={`mine-row-${row}`}>
-            <tbody>
-              <tr>
-                {cells.map((cell) => (
-                  <Cell key={`mine-cell-${cell.id}`} {...cell} />
-                ))}
-              </tr>
-            </tbody>
-          </table>
-        ))}
+
+        <table className="Table">
+          <tbody>
+            {table &&
+              table.map((cells, row) => (
+                <tr key={`mine-row-${row}`}>
+                  {cells.map((cell) => (
+                    <Cell key={`mine-cell-${cell.id}`} {...cell} />
+                  ))}
+                </tr>
+              ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
