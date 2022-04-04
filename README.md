@@ -3,7 +3,7 @@
 ## 설치
 
 ```
-git clone
+npx create-react-app minesweeper
 npm install
 npm start
 
