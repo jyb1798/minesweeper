@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 const OpenCell = ({ count, hasMine }) => (
   <div className="Cell__cover Cell__cover--opened">
@@ -18,19 +19,21 @@ const Cell = ({
   hasFlag,
   onOpen,
   onFlagToggle,
-}) => (
-  <td
-    className="Cell"
-    onClick={() => onOpen(id)}
-    onContextMenu={(e) => {
-      e.preventDefault();
-      onFlagToggle(id);
-    }}
-  >
-    {!isOpen && !hasFlag && <ClosedCell />}
-    {!isOpen && hasFlag && <FlagCell />}
-    {isOpen && <OpenCell hasMine={hasMine} count={count} />}
-  </td>
-);
+}) => {
+  return (
+    <td
+      className="Cell"
+      onClick={() => onOpen(id)}
+      onContextMenu={(e) => {
+        e.preventDefault();
+        onFlagToggle(id);
+      }}
+    >
+      {!isOpen && !hasFlag && <ClosedCell />}
+      {!isOpen && hasFlag && <FlagCell />}
+      {isOpen && <OpenCell hasMine={hasMine} count={count} />}
+    </td>
+  );
+};
 
 export default Cell;

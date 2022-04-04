@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import * as BoardHelpers from "../reducers/BoardHelpers";
-import Board from "./Board";
+import Board from "../components/Board";
 
 const mapStateToProps = ({ board }) => {
   const boardDim = Math.sqrt(Object.keys(board).length);

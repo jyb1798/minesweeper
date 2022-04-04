@@ -1,7 +1,8 @@
 import React from "react";
-import Cell from "../Cell/Cell";
-import GameMenu from "../GameMenu/GameMenu";
-import LevelMenu from "../LevelMenu/LevelMenu";
+import Cell from "./Cell";
+import GameMenu from "./GameMenu";
+import LevelMenu from "./LevelMenu";
+import "./style.css";
 
 const Board = ({ table, activeLevel }) => {
   return (
@@ -9,7 +10,6 @@ const Board = ({ table, activeLevel }) => {
       <LevelMenu />
       <div className={`MineSweeper ${activeLevel}`}>
         <GameMenu />
-
         <table className="Table">
           <tbody>
             {table &&

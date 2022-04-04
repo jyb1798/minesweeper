@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import minesweeperReducer from "./reducers/MinesweeperReducer";
-import Minesweeper from "./components/Minesweeper/Minesweeper";
+import Minesweeper from "./components/Minesweeper";
 import { RESET_BOARD } from "./actions/boardActions";
 
 const initAction = {

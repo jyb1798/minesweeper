@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 const LevelMenu = ({ gameLevels, changeLevel, activeLevel }) => (
   <div className="MineSweeper__level">

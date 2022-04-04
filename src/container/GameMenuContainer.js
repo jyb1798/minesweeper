@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import GameMenu from "./GameMenu";
+import GameMenu from "../components/GameMenu";
 import * as BoardHelpers from "../reducers/BoardHelpers";
 import { RESET_BOARD } from "../actions/boardActions";
 

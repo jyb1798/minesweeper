@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import LevelMenu from "./LevelMenu";
+import LevelMenu from "../components/LevelMenu";
 import * as BoardHelpers from "../reducers/BoardHelpers";
 import { RESET_BOARD } from "../actions/boardActions";
 import Levels from "../reducers/Levels";

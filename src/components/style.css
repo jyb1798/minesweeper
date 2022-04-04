@@ -180,7 +180,7 @@
     position: absolute;
     right: 10px;
     top: 10px;
-    background: url("../images/icn_flag_01.png") no-repeat left center;
+    background: url("../components/images/icn_flag_01.png") no-repeat left center;
     padding-left: 25px;
   }
   
@@ -188,7 +188,7 @@
     position: absolute;
     left: 10px;
     top: 10px;
-    background: url("../images/icn_clock_01.png") no-repeat left center;
+    background: url("../components/images/icn_clock_01.png") no-repeat left center;
     padding-left: 30px;
   }
   
@@ -211,15 +211,15 @@
   }
   
   .MineSweeper__face .playing, .MineSweeper__face .notPlaying {
-    background: url("../images/icn_face_01.png") no-repeat center center, #ccc;
+    background: url("../components/images/icn_face_01.png") no-repeat center center, #ccc;
   }
   
   .MineSweeper__face .winner {
-    background: url("../images/icn_face_02.png") no-repeat center center, #ccc;
+    background: url("../components/images/icn_face_02.png") no-repeat center center, #ccc;
   }
   
   .MineSweeper__face .loser {
-    background: url("../images/icn_face_03.png") no-repeat center center, #ccc;
+    background: url("../components/images/icn_face_03.png") no-repeat center center, #ccc;
   }
   
   .Table {
@@ -286,7 +286,7 @@
   }
   
   .Cell__flag {
-    background: url("../images/icn_flag_01.png") no-repeat center center;
+    background: url("../components/images/icn_flag_01.png") no-repeat center center;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
@@ -294,7 +294,7 @@
   }
   
   .Cell__bomb {
-    background: url("../images/icn_bomb_01.png") no-repeat center center;
+    background: url("../components/images/icn_bomb_01.png") no-repeat center center;
     text-indent: -9999px;
     overflow: hidden;
     display: block;

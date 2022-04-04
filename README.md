@@ -6,7 +6,6 @@
 npx create-react-app minesweeper
 npm install
 npm start
-
 ```
 
 ## 사용 기술
