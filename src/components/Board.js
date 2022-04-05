@@ -2,7 +2,6 @@ import React from "react";
 import Cell from "./Cell";
 import GameMenu from "./GameMenu";
 import LevelMenu from "./LevelMenu";
-import "./style.css";
 
 const Board = ({ table, activeLevel }) => {
   return (

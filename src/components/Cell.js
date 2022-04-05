@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 
 const OpenCell = ({ count, hasMine }) => (
   <div className="Cell__cover Cell__cover--opened">
